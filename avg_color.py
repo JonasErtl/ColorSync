@@ -17,8 +17,8 @@ while True:
     average_color = pixels.mean(axis=0)
 
     #Home Assistant IP and Token
-    ha_url = "http://192.168.178.34:8123"
-    ha_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIxNjdmYWQ3OTI5NTc0OTM0YWE2NTNiZTUxYWMwODVkNyIsImlhdCI6MTcwNzk1MTQ3NywiZXhwIjoyMDIzMzExNDc3fQ.nuIv6LYvRLFegm1kfvSIbJwxyzi9aLa_ILq-eONxKYg"
+    ha_url = "replace_with_your_homeassistant_url"
+    ha_token = "replace_with_your_homeassistant_token"
 
     headers = {
         "Authorization": f"Bearer {ha_token}",
@@ -26,7 +26,7 @@ while True:
     }
 
     # Homeassistent entity id of the desired light
-    entity_id = "light.taklampa"
+    entity_id = "your_light.id"
 
     data = {
         "entity_id": entity_id,
